@@ -6,7 +6,7 @@ const Chat=require('./models/chats.js')
 
 app.set('views',path.join(__dirname,'views'));
 app.set('view engine','ejs');
-app.use(express.static(path.join(__dirname,'views','public')));
+app.use(express.static(path.join(__dirname,'public')));
 
 main().then(()=>{console.log('Connection is Successfull.')})
 .catch(err => console.log(err));
